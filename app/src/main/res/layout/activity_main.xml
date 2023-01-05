@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="ВВЕДИТЕ НОМЕР ВАШЕГО БИЛЕТА"
+        android:textColor="#008ACA"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ticketNumberIn"
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:background="#DAF5FB"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Номер транспортного билета"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#008ACA"
+        android:textColorHint="#858585"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="ПРОВЕРИТЬ БИЛЕТ"
+        android:padding="17dp"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ticketNumberIn" />
+
+    <TextView
+        android:id="@+id/ticketInfoOut"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:background="#EAEBEC"
+        android:gravity="center"
+        android:hint="Здесь будет отражена информация проверки билета"
+        android:textColor="#008ACA"
+        android:textColorHint="#7FB0C6"
+        android:textSize="19sp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
